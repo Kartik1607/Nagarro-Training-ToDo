@@ -6,7 +6,7 @@ This is a simple Todo application with both backend and frontend code.
 </br>
 
 
-<img src='http://i.imgur.com/9kvmcD4.png'/>
+<img src='http://i.imgur.com/kNbKCeo.gif'/>
 
 ## :rage: OCD Triggers :rage:
 
