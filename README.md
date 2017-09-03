@@ -16,14 +16,14 @@ This needs fixing.
 
 </br>
 
-<b>No batch requests</b>
+<b>No batch requests</b></br>
 Server does not accept batch requests, as of now. To activate/complete/delete multiple items, multiple requests are sent.
 Due to above poor implementation, each response re-renders entire list again.
 What should have been 1 request, 1 response, 1 render, turns to be multiple request, response and tons of useless rendering.
 
 </br>
 
-<b>Poor frontend interface</b>
+<b>Poor frontend interface</b></br>
 Too many functions perform same operation, but over different datasets. Instead of making multiple functions, functions should accept the dataset as parameter.
 
 ```javascript
@@ -36,7 +36,7 @@ setStatus(STATUS, [dataset]);
 
 </br>
 
-<b>Non Context Aware Components</b>
+<b>Non Context Aware Components</b></br>
 Currently the DOM elements are not aware of context, hence reqiring redundant functions for similar task.
 
 ```
@@ -47,7 +47,7 @@ These two functions perform same task but on different but similar DOM elements.
 
 </br>
 
-<b>Input needs to be explicitly clicked to start typing</b>
+<b>Input needs to be explicitly clicked to start typing</b></br>
 Currently, user needs to click on input and then start typing. Instead, input should get focussed and activated automatically as soon as user starts typing.
 
 </br>
