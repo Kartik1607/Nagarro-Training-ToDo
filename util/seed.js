@@ -5,16 +5,13 @@ const STATUS = {
 };
 
 const todos = {
-    1: { title: 'Learn JS', status: STATUS.ACTIVE },
-    2: { title: 'Git Tutorial', status: STATUS.ACTIVE },
-    3: { title: 'Interactive Git', status: STATUS.ACTIVE }
 };
 
 
 module.exports = {
     STATUS,
     todos,
-    next_Id: 4
+    next_Id: 1
 };
 
 module.exports.getValidStatus = (input) => {

@@ -26,12 +26,10 @@ app.route('/api/todos')
             res.status(400).json({ error: "Todo can't be empty." });
         } else {
             todos[todoModule.next_Id] = {
-                title: todoTitle,
+                title: todoTitle.trim(),
                 status: STATUS.ACTIVE
             };
-            const jsonResult = {};
-            jsonResult[todoModule.next_Id] = todos[todoModule.next_Id];
-            res.json(jsonResult);
+            res.json(todos);
             todoModule.next_Id++;
         }     
 });
@@ -44,7 +42,7 @@ app.route('/api/todos/:id')
             res.status(400).json({ error: "Todo doesn't exists." });
         } else {
             target.status = STATUS.DELETED;
-            res.send(target);
+            res.send(todos);
         }
     })
     .put((req, res) => {
@@ -59,6 +57,8 @@ app.route('/api/todos/:id')
             todoStatus = todoModule.getValidStatus(todoStatus);
             if (todoStatus === undefined) {
                 response.error = 'Invalid Status';
+            } else {
+                todos[id].status = todoStatus;
             }
             if (todoTitle !== undefined) {
                 if (todoTitle.trim().length === 0) {
@@ -66,15 +66,16 @@ app.route('/api/todos/:id')
                 } else {
                     todoTitle = todoTitle.trim();
                     todos[id].title = todoTitle;
-                    response[id] = todos[id];
                 }
             }
+    
             if (response.error !== undefined) {
-                res.status(200);
-            } else {
                 res.status(400);
+                res.send(response); 
+            } else {
+                res.status(200);
+                res.send(todos);
             }
-            res.send(response);
         }
     }).get((req, res) => {
         const target = todoModule.getValidStatus(req.params.id);
@@ -108,8 +109,7 @@ app.put('/api/todos/:status/:id', (req, res) => {
     }
 
     todos[id].status = status;
-    jsonResult[id] = todos[id];
-    res.send(jsonResult);
+    res.send(todos);
 });
 
 app.listen(PORT);
