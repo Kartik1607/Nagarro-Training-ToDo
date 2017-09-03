@@ -1,4 +1,3 @@
-
 # My Todo
 
 This project was part of training at <a href='http://www.nagarro.com/en'>Nagarro</a> which was provided by <a href='https://codingblocks.com/'>Codingblocks.</a> 
@@ -9,7 +8,7 @@ This is a simple Todo application with both backend and frontend code.
 
 <img src='http://i.imgur.com/9kvmcD4.png'/>
 
-## OCD Triggers
+## OCD Triggers :japanese_ogre:
 
 <b>Too much useles rendering.</b></br>
 In current implementation, list is re-rendered for <b>ALL</b> items for <b>ANY</b> request. 
