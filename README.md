@@ -1,4 +1,4 @@
-# My Todo :pencil2:
+ # My Todo :pencil2:
 
 This project was part of training at <a href='http://www.nagarro.com/en'>Nagarro</a> which was provided by <a href='https://codingblocks.com/'>Codingblocks.</a> 
 This is a simple Todo application with both backend and frontend code.
@@ -52,7 +52,7 @@ Currently, user needs to click on input and then start typing. Instead, input sh
 
 </br>
 
-## Built With :heart: using
+## Built With  :heart:   using
 
 * [Node.js](https://nodejs.org/en/) - Runtime for Backend Code.
 * [Express.js](https://expressjs.com) - Backend API Routes.
