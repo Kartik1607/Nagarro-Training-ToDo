@@ -1,4 +1,4 @@
-# My Todo
+# My Todo :pencil2:
 
 This project was part of training at <a href='http://www.nagarro.com/en'>Nagarro</a> which was provided by <a href='https://codingblocks.com/'>Codingblocks.</a> 
 This is a simple Todo application with both backend and frontend code.
@@ -8,7 +8,7 @@ This is a simple Todo application with both backend and frontend code.
 
 <img src='http://i.imgur.com/9kvmcD4.png'/>
 
-## OCD Triggers :japanese_ogre:
+## :rage: OCD Triggers :rage:
 
 <b>Too much useles rendering.</b></br>
 In current implementation, list is re-rendered for <b>ALL</b> items for <b>ANY</b> request. 
@@ -47,10 +47,11 @@ These two functions perform same task but on different but similar DOM elements.
 
 </br>
 
-## Built With
+## Built With :heart: using
 
 * [Node.js](https://nodejs.org/en/) - Runtime for Backend Code.
 * [Express.js](https://expressjs.com) - Backend API Routes.
+* [Body-Parser](https://www.npmjs.com/package/body-parser) - Parsing and decoding the requests.
 * [Bootstrap](https://getbootstrap.com/) - Frontend Responsive Webpage.
 
 ## License
