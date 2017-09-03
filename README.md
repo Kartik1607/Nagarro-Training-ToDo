@@ -47,6 +47,11 @@ These two functions perform same task but on different but similar DOM elements.
 
 </br>
 
+<b>Input needs to be explicitly clicked to start typing</b>
+Currently, user needs to click on input and then start typing. Instead, input should get focussed and activated automatically as soon as user starts typing.
+
+</br>
+
 ## Built With :heart: using
 
 * [Node.js](https://nodejs.org/en/) - Runtime for Backend Code.
